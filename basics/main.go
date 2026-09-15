@@ -51,4 +51,8 @@ func main() {
 	default:
 		fmt.Println("good evening!")
 	}
+	// defer in go
+	// defers are executed after the function returns
+	defer fmt.Println("defer!")
+	fmt.Println("done!")
 }
