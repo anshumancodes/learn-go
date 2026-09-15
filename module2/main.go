@@ -61,4 +61,16 @@ func main() {
 	// create a slice with a slice
 	newSlice := d[0:2]
 	fmt.Println("Slice from the slice d", newSlice)
+
+	// make in go
+	a := make([]int, 5)
+	fmt.Println(a)
+	// make([]T, len, cap)
+	b := make([]int, 5, 7)
+	fmt.Println(b)
+
+	// loop over a slice
+	for i, v := range b {
+		fmt.Println("index", i, "value", v)
+	}
 }
