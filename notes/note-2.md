@@ -29,4 +29,15 @@ A **slice is a small descriptor that refers to an underlying array**, either the
 - you can create slices from struct and other slices as well
 - slices dont need size declaration
 - when value of the array is changed by one slice the value changes for all slices
--
+
+#### make
+make is a way to create slices.
+- make takes 3 args i.e; make(slice type,length,capacity)
+- if you dont assign the capacity it assums the capacity is same as the length
+
+### appending in slice
+
+-  slices are dynamic in size and elements can be added and removed unlike arrays
+-  if the capacity of a slice is 2 and a 3rd element is appended, Go will increase the capacity to 4 so the 3 elements can fit in the slice
+- Go generally doubles the capacity whenever there is not enough capacity to append an element, until it reaches a capacity of 256
+- after 256, instead of doubling the size, Go increases the capacity by around 1.25x to reduce unnecessary memory allocation
