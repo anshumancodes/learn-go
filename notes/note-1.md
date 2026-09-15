@@ -1,0 +1,10 @@
+- a go program can generate a cross platform executable binary
+- the exported function's first char needed to be capital
+- you can compile code from the binary for any os
+- the compilled binary doesnt need go installed to run the binary
+-  go build doesnt cache anything , go run however caches the results from previous runs and it saves resource
+ -  best practices is to not name package with a capital letter, package names should be as short as possible
+ -  %v is for value , %q for quotes
+ - go doesnt implecicitly convert values , you have to do it manually
+ - const values are fixed , they are evaluated at compile time & a value must be assigned at initialistion
+ - defer is called after the function retuns or there are no more statements to execute in the program. defer is kept the stack and called at the end.
